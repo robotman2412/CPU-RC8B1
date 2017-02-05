@@ -26,8 +26,7 @@ commands:
 19 ifStateToC
 1a CtoIfState
 1b stop clock (turns back on when resetting)
-default program (comes with download)
-default program modes: (first sector)
+default program modes: (first sector, comes with download)
 0f02 count up
 0f07 fibonachi
 0f0d countdown from 10
