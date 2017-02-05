@@ -1,0 +1,33 @@
+commands:
+01 A to B
+02 A to C
+03 B to A
+04 B to C
+05 C to A
+06 C to B
+07 add (to C)
+08 sub (to C)
+09 RAM to A (params = RAM index)
+0a RAM to B (params = RAM index)
+0b RAM to C (params = RAM index)
+0c A to RAM (params = RAM index)
+0d B to RAM (params = RAM index)
+0e C to RAM (params = RAM index)
+0f jump (params = adress)
+10 IO.nextByte
+11 IO.readByte (to C)
+12 IO.send
+13 IO.addToArray (from C)
+14 IO.getLength (to C)
+15 jumpIf (using if state)
+16 jumpIfNot (using if state)
+17 ifFlags (to if state) (left 4 bit of params: on right 4 bits of param: off) (flag bit 0: A > B, flag bit 1: A == B, flag bit 2: A || B, flag bit 3: A && B) (20 ==, 02 !=, 12 >, 03 <, 40 &&, 80 ||)
+18 ifAvailable (to if state) (params > IO.length)
+19 ifStateToC
+1a CtoIfState
+1b stop clock (turns back on when resetting)
+default program (comes with download)
+default program modes: (first sector)
+0f02 count up
+0f07 fibonachi
+0f0d countdown from 10

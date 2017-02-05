@@ -1,0 +1,8 @@
+8-bit
+2-cycle clock (load, run)
+FLROM ROMloader (loads up to ROM index point)
+ROM boot
+256 byte Serial COMM
+no dedicated clock speed
+redcore achitexture
+Red Core 8 Bit version 1
